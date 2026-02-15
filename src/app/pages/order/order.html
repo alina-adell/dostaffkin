@@ -90,7 +90,7 @@
                             <input id="customerName" formControlName="name" placeholder="Ваше имя" autocomplete="off" />
                         </div>
                         <div class="main-field">
-                            <input id="customerPhone" placeholder="Ваш телефон" autocomplete="off" inputmode="tel" />
+                            <input id="customerPhone" formControlName="phone" placeholder="Ваш телефон" autocomplete="off" inputmode="tel" />
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                 </button>
             </div>
 
-            <div class="main-order-success" id="orderSuccess" [class.is-active]="orderId()">
+            <div class="main-order-success" id="orderSuccess" [class.is-visible]="orderId()">
                 <div class="main-success-icon">✓</div>
                 <div class="main-success-title">Заявка отправлена!</div>
                 <div class="main-success-title">
